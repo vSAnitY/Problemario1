@@ -94,7 +94,7 @@ namespace WPFDBParte2
                 else
                 {
                     cmd.CommandText = "update Progra set Nombre='" + txtNombre.Text + "',Area='" + cbArea.Text + "',Cta=" + txtCta.Text
-                        + ",Direccion='" + txtEdad.Text + "' where Id=" + txtId.Text;
+                       + ",Edad='" + txtEdad.Text + "' where Id=" + txtId.Text;
                     cmd.ExecuteNonQuery();
                     MostrarDatos();
                     MessageBox.Show("Se ha actualizado correctamente");
@@ -127,7 +127,7 @@ namespace WPFDBParte2
                 DataRowView row = (DataRowView)gvDatos.SelectedItems[0]; OleDbCommand cmd = new OleDbCommand(); if (con.State != ConnectionState.Open) con.Open();
 
                 cmd.Connection = con;
-                cmd.CommandText = "delete from progr where Id=" + row["Id"].ToString(); cmd.ExecuteNonQuery();
+                cmd.CommandText = "delete from progra where Id=" + row["Id"].ToString(); cmd.ExecuteNonQuery();
                 MostrarDatos();
                 MessageBox.Show("El alunmo ha sido eliminado");
                 LimpiaTodo();
