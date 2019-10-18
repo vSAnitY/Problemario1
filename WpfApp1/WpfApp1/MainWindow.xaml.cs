@@ -78,7 +78,7 @@ namespace WPFDBParte2
                 {
                     if (cbArea.Text != "Selecciona una area")
                     {
-                        cmd.CommandText = "insert into Progra(Id,Nombre,Area,No. Cuenta,Edad) " +
+                        cmd.CommandText = "insert into Progra(Id,Nombre,Area,Cta,Edad) " +
                             "Values(" + txtId.Text + ",'" + txtNombre.Text + "','" + cbArea.Text + "'," + txtCta.Text + ",'" + txtEdad.Text + "')";
                         cmd.ExecuteNonQuery();
                         MostrarDatos();
@@ -93,7 +93,7 @@ namespace WPFDBParte2
                 }
                 else
                 {
-                    cmd.CommandText = "update Progra set Nombre='" + txtNombre.Text + "',Area='" + cbArea.Text + "',No. de Cuenta=" + txtCta.Text
+                    cmd.CommandText = "update Progra set Nombre='" + txtNombre.Text + "',Area='" + cbArea.Text + "',Cta=" + txtCta.Text
                         + ",Direccion='" + txtEdad.Text + "' where Id=" + txtId.Text;
                     cmd.ExecuteNonQuery();
                     MostrarDatos();
@@ -111,7 +111,7 @@ namespace WPFDBParte2
         {
             if (gvDatos.SelectedItems.Count > 0)
             {
-                DataRowView row = (DataRowView)gvDatos.SelectedItems[0]; txtId.Text = row["Id"].ToString(); txtCta.Text = row["No. de Cuenta"].ToString(); txtNombre.Text = row["Nombre"].ToString(); cbArea.Text = row["Area"].ToString(); txtEdad.Text = row["Edad"].ToString(); txtId.IsEnabled = false; btnNuevo.Content = "Actualizar";
+                DataRowView row = (DataRowView)gvDatos.SelectedItems[0]; txtId.Text = row["Id"].ToString(); txtCta.Text = row["Cta"].ToString(); txtNombre.Text = row["Nombre"].ToString(); cbArea.Text = row["Area"].ToString(); txtEdad.Text = row["Edad"].ToString(); txtId.IsEnabled = false; btnNuevo.Content = "Actualizar";
             }
             else
             {
