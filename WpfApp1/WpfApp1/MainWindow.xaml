@@ -23,14 +23,14 @@
             <Label Content="Bachillerato 8" HorizontalAlignment="Center" FontSize="36" FontWeight="Bold"></Label>
             <WrapPanel>
                 <TextBlock Text="Id : "/>
-                <TextBox Name="txtId" />
+                <TextBox x:Name="txtId" Background="Bisque" />
             </WrapPanel>
             <WrapPanel>
                 <TextBlock Text="Nombre : "/>
-                <TextBox Name="txtNombre" />
+                <TextBox Name="txtNombre" Background="Bisque" />
             </WrapPanel>
             <WrapPanel>
-                <TextBlock Text="Area : "/>
+                <TextBlock Text="Area : " />
                 <ComboBox FontSize="20" Name="cbArea" Width="250" Margin="10">
                     <ComboBoxItem Content="Selecciona Area" Selector.IsSelected="True" />
                     <ComboBoxItem Content="General" />
@@ -41,18 +41,18 @@
             </WrapPanel>
             <WrapPanel>
                 <TextBlock Text="No. de Cuenta : "/>
-                <TextBox Name="txtCta" />
+                <TextBox Name="txtCta" Background="Bisque" />
             </WrapPanel>
             <WrapPanel>
                 <TextBlock Text="Edad : "/>
-                <TextBox Name="txtEdad"/>
+                <TextBox Name="txtEdad" Background="Bisque"/>
             </WrapPanel>
-            <WrapPanel Margin="0" HorizontalAlignment="Center" Height="100">
-                <Button Name="btnNuevo" Content="Creacion" FontSize="25" Width="120" Margin="5" Click="BtnNuevo_Click" />
-                <Button Name="btnEditar" Content="Editar" FontSize="25" Width="120" Margin="5" Click="BtnEditar_Click" />
-                <Button Name="btnEliminar" Content="Eliminar" FontSize="25" Width="120" Margin="5" Click="BtnEliminar_Click" />
-                <Button Name="btnCancelar" Content="Cancelar" FontSize="25" Width="120" Margin="5" Click="BtnCancelar_Click" />
-                <Button Name="btnSalir" Content="Salir" FontSize="25" Width="120" Margin="5"  Click="BtnSalir_Click" />
+            <WrapPanel Margin="0" HorizontalAlignment="Center" Height="150">
+                <Button Name="btnNuevo" Content="Creacion" FontSize="25" Width="120" Margin="10" Click="BtnNuevo_Click" Background="Coral"/>
+                <Button Name="btnEditar" Content="Editar" FontSize="25" Width="120" Margin="10" Click="BtnEditar_Click" Background="Coral"/>
+                <Button Name="btnEliminar" Content="Eliminar" FontSize="25" Width="120" Margin="10" Click="BtnEliminar_Click" Background="Coral" />
+                <Button Name="btnCancelar" Content="Cancelar" FontSize="25" Width="120" Margin="10" Click="BtnCancelar_Click" Background="Coral" />
+                <Button Name="btnSalir" Content="Salir" FontSize="25" Width="120" Margin="10"  Click="BtnSalir_Click" Background="Coral"/>
             </WrapPanel>
             <Label Content="No hay registros." Name="lbContenido" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="#FFE10000"></Label>
             <WrapPanel Margin="20" HorizontalAlignment="Center">
