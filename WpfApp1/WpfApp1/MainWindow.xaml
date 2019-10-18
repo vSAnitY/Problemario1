@@ -48,7 +48,7 @@
                 <TextBox Name="txtEdad"/>
             </WrapPanel>
             <WrapPanel Margin="0" HorizontalAlignment="Center" Height="100">
-                <Button Name="btnNuevo" Content="Crear" FontSize="25" Width="120" Margin="5" Click="BtnNuevo_Click" />
+                <Button Name="btnNuevo" Content="Creacion" FontSize="25" Width="120" Margin="5" Click="BtnNuevo_Click" />
                 <Button Name="btnEditar" Content="Editar" FontSize="25" Width="120" Margin="5" Click="BtnEditar_Click" />
                 <Button Name="btnEliminar" Content="Eliminar" FontSize="25" Width="120" Margin="5" Click="BtnEliminar_Click" />
                 <Button Name="btnCancelar" Content="Cancelar" FontSize="25" Width="120" Margin="5" Click="BtnCancelar_Click" />
